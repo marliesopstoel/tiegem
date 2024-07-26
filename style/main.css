@@ -1,0 +1,179 @@
+/*** ALGEMENE CSS ***/
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;    
+    font-size: 16px;
+    color: darkblue;
+}
+
+header {
+    font-weight: 700;
+}
+
+header div {
+    width: 100%;
+
+    @media only screen and (min-width: 768px) {
+        width: 40%;
+    }
+
+    position: relative;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+header img {
+    width: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+header h1 {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    background-color: darkblue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    header h1 {
+        font-size: 18px;
+    }
+}
+
+h2 {
+    color: darkblue;
+}
+
+h3 {
+    font-weight: 500;
+    text-decoration: underline;
+}
+footer {
+    clear: left;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+
+/*** CONTENT ***/
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+
+    [class*="col-"] {
+        float: left;
+        padding: 20px;
+    }
+
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+
+/*** FEITJES ***/
+
+#feitjes {
+    padding: 10px 15px;
+}
+
+#feitjes li {
+    font-size: 14px;
+}
+
+#feitjes li:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+/*** ATTRACTIES ***/
+
+#attracties {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+#attracties h2 {
+    margin-top: 5px;
+    color: white;
+}
+
+@media only screen and (min-width: 992px) {
+    #attractielijst div div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #attractielijst div div p {
+        width: 70%;
+    }
+
+    #attractielijst div div img {
+        width: 30%;
+    }
+}
+
+#attractielijst img {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
